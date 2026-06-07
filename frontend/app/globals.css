@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  /* Cleaned up variables - using your gradient tones */
+  --background-from: #fbbf24; /* amber-400 */
+  --background-via: #f59e0b;  /* amber-500 */
+  --background-to: #f97316;   /* orange-500 */
+  --foreground: hsl(4, 95%, 52%);
+}
+
+body {
+  /* Applies the gradient globally to the entire app */
+  background: linear-gradient(135deg, var(--background-from), var(--background-via), var(--background-to));
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-h-screen: 100vh;
+  margin: 0;
+}
